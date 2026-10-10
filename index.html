@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A free, simple text counter and text case converter.">
+  <title>Quick Text Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <p class="eyebrow">A tiny productivity tool</p>
+      <h1>Quick Text Tools</h1>
+      <p class="subtitle">Count, clean, and transform your text in seconds.</p>
+    </header>
+
+    <section class="panel" aria-label="Text editor">
+      <label for="text-input">Your text</label>
+      <textarea id="text-input" placeholder="Type or paste something here..." spellcheck="true"></textarea>
+
+      <div class="stats" aria-live="polite">
+        <div><strong id="word-count">0</strong><span>Words</span></div>
+        <div><strong id="char-count">0</strong><span>Characters</span></div>
+        <div><strong id="char-no-space-count">0</strong><span>No spaces</span></div>
+        <div><strong id="reading-time">0 min</strong><span>Reading time</span></div>
+      </div>
+
+      <div class="actions">
+        <button type="button" id="uppercase-btn">UPPERCASE</button>
+        <button type="button" id="lowercase-btn" class="secondary">lowercase</button>
+        <button type="button" id="copy-btn" class="secondary">Copy text</button>
+        <button type="button" id="clear-btn" class="danger">Clear</button>
+      </div>
+      <p id="status" class="status" role="status"></p>
+    </section>
+
+    <footer>Made with HTML, CSS & JavaScript · No sign-up needed</footer>
+  </main>
+</body>
+</html>
